@@ -106,6 +106,7 @@ public class Main {
   static JLabel labelUser;
   static JLabel labelState;
   static JButton buttonAcknowledge;
+  static JButton buttonCancel;
 
   // Timer variables //////////////////////////////////////////////////////////
   static java.util.Timer timer;
@@ -288,6 +289,12 @@ public class Main {
     labelState.setAlignmentX(JComponent.CENTER_ALIGNMENT);
     labelState.setForeground(Color.magenta);
     panelStatus.add(labelState);
+
+    buttonCancel = new JButton("Return");
+    buttonCancel.addActionListener(handler);
+    buttonCancel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+    buttonCancel.setForeground(Color.red);
+    panelStatus.add(buttonCancel);
 
     panelStatus.add(Box.createVerticalGlue());
 
