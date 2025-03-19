@@ -61,4 +61,12 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+# Test Steps for Automatic submission of card number after entered
+
+1. Build and run CiCo.
+2. Enter 00000000
+
+# Expected Results
+* Should display "Checked In" after the final digit of step 2 is entered.
+
 
